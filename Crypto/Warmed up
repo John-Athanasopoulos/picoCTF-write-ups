@@ -1,0 +1,6 @@
+Warmed up - write up
+
+This time we need to translate "0x3D" from hex to dec.
+We once again open CyberChef and type "0x3D" in the input field. Our recipe this time will be:
+From Hex(Delimiter:0x) / To Decimal(Delimiter:any)
+The output is "61", and thus our flag is picoCTF{61}.

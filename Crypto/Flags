@@ -1,0 +1,23 @@
+Flags - write up
+
+A medium challenge in difficulty, but nevertheless a very original and beautiful one..
+
+We download and open the image given to us. We quickly understand that the first flags are the ones
+standing for PICOCTF, so we keep them in mind.
+At the moment the flag is: PICOCTF{F--------T-FF}
+Based on the fact that the whole challenge is about flags, I believe that the first word is "flag"
+and as the 3rd flag is the same with the 6th one, the flag is: PICOCTF{FLAG-A---T-FF}
+
+We also see that the 5th letter is the same as the 9th one. I guessed it must have been "S", as it a
+common letter and the whole challenge is about flags. So the flag is: PICOCTF{FLAGSA--ST-FF}
+
+My best guesses at the moment were "FLAGSARESTUFF" and "FLAGSARESTIFF", but none of them was the answer.
+For some time I couldn't find anything new, so I decided to google "flags letters" and BOOM.
+
+These flags are actually International maritime signal flags. I used to know their existence as a kid
+but had forgotten about them completely, so no surprise they reminded me of something..
+(You can see about them here: https://en.wikipedia.org/wiki/International_maritime_signal_flags . Don't
+try to decrypt the message with some random picture because most of them were wrong, if I'm not mistaken).
+
+I went to the board that had all the flags and the corresponding letters or numbers and found the flag,
+which was: PICOCTF{F1AG5AND5TUFF}

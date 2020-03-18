@@ -1,0 +1,5 @@
+Lets Warm Up - write up
+
+We open CyberChef in our browser and we type "0x70" in the input field. In order to convert this from
+hexadecimal to ASCII, we need to pick the recipe "From Hex"(with Delimiter:0x).
+The output is "p", and thus the flag is: picoCTF{p}
