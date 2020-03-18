@@ -20,8 +20,8 @@ Tn 1508, Ptsatsps Zwttnjxiax tnbjytki ehk xz-cgqwej ylbaql rkhea (g rltxni ol xs
 
 Gplrfdo’y xpcuso butvlky lpvjlrki tn 1555 gx l cuseitzltoty ol yse lncsz. Yse rthex mllbjd ol yse gqahggpty fce tth snnqtki cemzwaxqj, bay ehk fwpnfmezx lnj yse osoed qptzjcs gwp mocpd hd xegsd ol f xnkrznoh vee usrgxp, wnnnh ify bk itfljcety hizm paim noxwpsvtydkse.
 
-I immediatly highlighted the years found in the text, and especially 1553. This leads me, knowing some history of cryptography,
-to believe that this is a Vigenère cipher encoding. However, we need a key to decrypt it.
+I immediatly highlighted the years found in the text, and especially 1553 (the year of its creation). This leads me,
+knowing some history of cryptography,to believe that this is a Vigenère cipher encoding. However, we need a key to decrypt it.
 I tried multiple keys, such as Vigenere, Encryption and Crypto, but it wasn't the case. I needed to use a
 decrypting tool that decrypts it without knowing the key (like: https://www.guballa.de/vigenere-solver).
 I choose "English" as the language and press "Break Cipher".
