@@ -1,0 +1,4 @@
+13 - write up
+
+We open CyberChef in our browser and paste as text input the text given to us: cvpbPGS{abg_gbb_onq_bs_n_ceboyrz}
+We choose ROT13 as our recipe and we are given the flag: picoCTF{not_too_bad_of_a_problem}
