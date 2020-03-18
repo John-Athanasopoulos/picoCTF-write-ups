@@ -1,0 +1,15 @@
+shark on wire 1 - write up
+
+I downloaded at first the .pcap file and opened it with Wireshark.
+At the beginning, I thought that there could be a packet sent with HTTP requests, so I applied "http.request.method" as a filter.
+I didn't get quite an interesting answer, so I thought that I should check "udp.stream" as a filter.By doing this, I found at the
+beginning some very interesting Malformed Packets sent to 10.0.0.11 from 10.0.0.6
+If we right-click them and navigate to Follow/UDP Stream, we will find a string saying "picopicopico".
+
+However, if we click the next lines, belonging to the filter "udp.stream eq 6", and follow the udp stream (as shown above), we will
+find the flag: picoCTF{StaT31355_636f6e6e}
+
+ATTENTION: Careful because later in the .pcap file the same ip address (10.0.0.2) starts sending fake flags in the following format:
+picoCTF{N0t_a_fLag}. So remember the real flag is picoCTF{StaT31355_636f6e6e}
+
+In the end, the packets become strings of non-readable text.
