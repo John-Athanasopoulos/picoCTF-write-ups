@@ -1,0 +1,49 @@
+WhitePages - write up
+
+We doenload the .txt file given to us and open it, to see that there is some invisible text. However, the
+file isn't blank, so there has to be a way we can find what's written...
+
+I tried to binwalk it to see if the text was just to mislead and check for any hidden files within the .txt file.
+Didn't find anything important, so I decided to string it, although I knew I wouldn't be able to find anything.
+Indeed, I didn't find anything really important.
+
+What crossed my mind was that the text was made of different types of spaces. So I executed "xxd -g 1 whitepages.txt"
+to convert the text to hex values. The text was a series of numbers and searching a bit on the internet, I found out
+that there were two different space types contained in the text, holding the following values in the hex system:
+- \x20
+- \xe2\x80\x83
+
+We can also see that these two types of hex values are repeated continuously throught the text, and this may suggest that
+this is a binary file.
+So I created a simple script to test this, which is the following:
+
+//CodeStart
+from pwn import *
+
+with open("whitepages.txt", "rb") as file:
+	d = bytearray(file.read())
+	d = d.replace(b'\xe2\x80\x83', b'1')
+	d = d.replace(b'\x20', b'0')
+	d = d.decode("ascii")
+	print(unbits(d))
+
+//CodeEnd
+
+What this does? It opens whitepages.txt, replaces one type of space with "0" and the other with "1" and then decodes it to
+ASCII. Afterwards, it prints the message in readable form.
+If we run this script, the result will be the following:
+
+b'\xf5\xf6\xf6\x8f\x96\x9c\x90\xbc\xab\xb9\xf5\xf5\xf6\xf6\xac\xba\xba\xdf\xaf\xaa\xbd\xb3\xb6\xbc\xdf\xad\xba\xbc\xb0\xad
+\xbb\xac\xdf\xd9\xdf\xbd\xbe\xbc\xb4\xb8\xad\xb0\xaa\xb1\xbb\xdf\xad\xba\xaf\xb0\xad\xab\xf5\xf6\xf6\xca\xcf\xcf\xcf\xdf\xb9
+\x90\x8d\x9d\x9a\x8c\xdf\xbe\x89\x9a\xd3\xdf\xaf\x96\x8b\x8b\x8c\x9d\x8a\x8d\x98\x97\xd3\xdf\xaf\xbe\xdf\xce\xca\xcd\xce\xcc
+\xf5\xf6\xf6\x8f\x96\x9c\x90\xbc\xab\xb9\x84\x91\x90\x8b\xa0\x9e\x93\x93\xa0\x8c\x8f\x9e\x9c\x9a\x8c\xa0\x9e\x8d\x9a\xa0\x9c
+\x8d\x9a\x9e\x8b\x9a\x9b\xa0\x9a\x8e\x8a\x9e\x93\xa0\xcc\x9d\x99\xcb\xcf\x9d\xc7\xc9\xc6\x9a\x9a\xc6\xc7\xcb\xc7\xc9\xc9\x9a
+\xc9\xc8\x99\xcc\xcf\xca\xc8\x99\xcf\xcf\xc9\x9e\xc6\xcd\x82\xf5\xf6\xf6'.
+
+In order to fix this, we need to revert the values we've put to the script, thus replacing b'\xe2\x80\x83' with b'0'
+and b'\x20' with b'1'. After we do this, the result is:
+
+b'\n\t\tpicoCTF\n\n\t\tSEE PUBLIC RECORDS & BACKGROUND REPORT\n\t\t5000 Forbes Ave, Pittsburgh, PA 15213\n\t\t
+picoCTF{not_all_spaces_are_created_equal_3bf40b869ee984866e67f3057f006a92}\n\t\t'
+
+This way, we find the flag which is: picoCTF{not_all_spaces_are_created_equal_3bf40b869ee984866e67f3057f006a92}
