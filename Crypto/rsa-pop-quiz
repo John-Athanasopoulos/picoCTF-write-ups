@@ -1,7 +1,7 @@
 rsa-pop-quiz - write up
 
-This was a pretty difficult challenge that I solved without automating the process.
-However I found a script for the automation and fixed it, so that you will have the correct answer.
+This was a pretty difficult (for a noob like me) challenge that I solved without automating the process.
+However I found a non-functional script for the automation and fixed it, so that you will have the correct answer.
 Know that copying the flag from anywhere won't work, as the result depends on the number after
 'nc 2019shell1.picoctf.com'. Follow the instructions of the script and you will be fine though!
 
