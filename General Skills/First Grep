@@ -1,0 +1,11 @@
+First Grep - write up
+
+We download the file and from the title of the challenge we understand we will
+need to use grep in order to find the flag.
+So we open the terminal, change to the directory that contains the file and then
+type "grep 'picoCTF' file". This searches for all the strings containing the
+sub-string picoCTF, and as our flag is in picoCTF{...} format, it is also going
+to be displayed among the other words that contain picoCTF.
+It turns out that the only word containing picoCTF is our flag:
+
+picoCTF{grep_is_good_to_find_things_887251c6}

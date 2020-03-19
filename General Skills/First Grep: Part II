@@ -1,0 +1,17 @@
+First Grep: Part II - write up
+
+We open the picoCTF shell, login with our picoCTF credentials and we are ready to search the flag.
+We will need to search for the current problem, so we will need to cd in the needed directory.
+So we need to do the following:
+
+>cd ..
+>cd ..
+>cd /problems/first-grep--part-ii_4_ca16fbcd16c92f0cb1e376a6c188d58f/files
+
+Now we are in the correct directory, so we have to search every file for our flag. In order to do this,
+we can execute:
+
+>grep 'picoCTF' -r
+
+This way, we find the flag:
+picoCTF{grep_r_to_find_this_0e28f3ee}
