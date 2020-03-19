@@ -1,0 +1,17 @@
+insp3ct0r - write up
+
+I opened the link and proceeded to go to the Inspector (Ctrl+Shift+I).
+There I managed to find the 1/3 of the flag navigating to body/div/div(last one),
+as a comment: <!--Html is neat. Anyways have 1/3 of the flag: picoCTF{tru3_d3-->
+1st part: picoCTF{tru3_d3 
+
+After that, navigating to the {}Style Editor tab in the Inspector tool and heading to
+the mycss.css tab, I found in the end the following comment:
+/* You need CSS to make pretty pages. Here's part 2/3 of the flag: t3ct1ve_0r_ju5t */
+So the 2nd part of the flag is: t3ct1ve_0r_ju5t
+
+FInally, going into the Debugger tab in the Inspector tool and navigating to the myjs.js
+tab, I found the 3rd part in the following comment:
+/* Javascript sure is neat. Anyways part 3/3 of the flag: _lucky?39dd9e36} */
+
+So the flag is: picoCTF{tru3_d3t3ct1ve_0r_ju5t_lucky?39dd9e36}
