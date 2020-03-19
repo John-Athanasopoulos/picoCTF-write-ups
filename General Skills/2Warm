@@ -1,0 +1,6 @@
+2Warm - write up
+
+All this challenge is about is converting 42 from decimal to binary.
+42 = 32 + 8 + 2, thus 42(base10) = 101010(base2)
+
+So, the flag is picoCTF{101010}
