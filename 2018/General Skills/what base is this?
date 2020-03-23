@@ -1,0 +1,25 @@
+what base is this? - write up
+
+We type "nc 2018shell.picoctf.com 64706" into our terminal and we receive the following message:
+We are going to start at the very beginning and make sure you understand how data is stored.
+Please give me the 01101100 01100001 01101101 01110000 01110000 01101111 01110011 01110100 as a word.
+To make things interesting, you have 30 seconds.
+Input: (Note every time the binary word is different)
+
+I quickly opened CyberChef, pasted 01101100 01100001 01101101 01110000 01110000 01101111 01110011 01110100 into the input field and clicked the wand next to the output. The word was: lamppost
+
+So I typed:
+> lamppost , and received the following message:
+Please give me the 74696d65 as a word.
+Input:
+I pasted 74696d65 into the input field, erased the previous recipe and clicked the wand. The answer was: time
+
+So I typed:
+>time , and I received the final message which was:
+Please give me the  142 157 164 164 154 145 as a word.
+Input:
+I did the same thing as before and the word was: bottle
+So I typed:
+>bottle and this time the message was:
+You got it! You're super quick!
+Flag: picoCTF{delusions_about_finding_values_5b21aa05}

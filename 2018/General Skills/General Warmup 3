@@ -1,0 +1,4 @@
+General Warmup 3 - write up
+
+We open CyberChef and enter 0x3D in the input field. As for recipe, we choose From Hex/To Dec.
+So the flag is: picoCTF{61}, as the output is 61.

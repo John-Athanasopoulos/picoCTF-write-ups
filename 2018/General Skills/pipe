@@ -1,0 +1,6 @@
+pipe - write up
+
+In order to find the flag, we have to type the following line in the terminal:
+> nc 2018shell.picoctf.com 44310 | grep "pico"
+We will be given the following flag:
+picoCTF{almost_like_mario_a13e5b27}

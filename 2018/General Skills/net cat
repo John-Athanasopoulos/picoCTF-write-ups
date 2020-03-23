@@ -1,0 +1,7 @@
+net cat - write up
+
+To connect to 2018shell.picoctf.com at port 49387 with net cat, we just have to open our terminal
+and write nc 2018shell.picoctf.com 49387. We will be given the following message:
+That wasn't so hard was it?
+picoCTF{NEtcat_iS_a_NEcESSiTy_8b6a1fbc}
+

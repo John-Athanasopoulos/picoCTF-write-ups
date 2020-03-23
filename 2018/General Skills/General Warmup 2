@@ -1,0 +1,5 @@
+General Warmup 2 - write up
+
+27 in the decimal system is equal to 16 + 8 + 2 + 1 (they are all powers of 2)
+so 2^4+2^3+2^1+2^0=11011 (base 2)
+So the flag is: picoCTF{11011}
