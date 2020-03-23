@@ -1,0 +1,5 @@
+So Meta - write up
+
+We download the picture given and we open our terminal. We change the directory to the folder which contains the picture.
+After that we type "strings pico_img.png"
+A series of strings opens and in the end we see the flag: picoCTF{s0_m3ta_368a0341}

@@ -1,0 +1,5 @@
+Unzip - write up
+
+We download the file and extract the picture in it.
+The picture contains "unz1pp1ng_1s_3a5y" so in order to submit it we need to submit the flag:
+picoCTF{unz1pp1ng_1s_3a5y}
