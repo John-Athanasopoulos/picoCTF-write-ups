@@ -1,9 +1,0 @@
-extensions - write up
-
-I downloaded the .txt file and stringed it, in case I was able to find the flag, but no luck.
-I opened the text file and saw that in the beginning there was a string saying "PNG", so my guess was that it
-was actually an image.
-I opened the file in CyberChef (a really useful tool for cryptography and other uses) found here: https://gchq.github.io/CyberChef/
-
-When the file loaded, I saw that it was indeed a PNG image, so I pressed the little wand icon next to output that gave me
-the actual flag which was: picoCTF{now_you_know_about_extensions}
