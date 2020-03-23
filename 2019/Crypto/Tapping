@@ -1,0 +1,11 @@
+Tapping - write up
+
+We type "nc 2019shell1.picoctf.com 32273" in our terminal and we are given the following encrypted message:
+.--. .. -.-. --- -.-. - ..-. { -- ----- .-. ... ...-- -.-. ----- -.. ...-- .---- ... ..-. ..- -. .---- -.... --... --... ..--- ..... --... ..--- ---.. --... }
+
+We easily understand this is probably a Morse Code encrypted message, so we open a Morse Code decryption online tool
+(like http://www.unit-conversion.info/texttools/morse-code/) to decrypt the message.
+
+The output is: "picoctf?m0rs3c0d31sfun1677257287?" and we understand that the flag is:
+
+PICOCTF{M0RS3C0D31SFUN1677257287}
