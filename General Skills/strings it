@@ -1,9 +1,0 @@
-strings it - write up
-
-We download the file "strings" and we are told to find the flag without running it.
-So, we open the terminal, change to the directory in which our file is saved and type
-"strings strings" (strings <filename.extension> in our case the file is strings without
-an extension)
-
-After that, and to skip any unnecessary work, we can press Ctrl + Shift + F and search
-for "picoCTF". This way, we can find the flag: picoCTF{5tRIng5_1T_c7fff9e5}
