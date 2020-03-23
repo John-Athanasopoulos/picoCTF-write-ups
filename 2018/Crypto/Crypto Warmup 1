@@ -1,0 +1,6 @@
+Crypto Warmup 1 - write up
+
+We understand from the message that we have to use one-time pad decryption. So we head to a website 
+just like this one: https://www.boxentriq.com/code-breaking/one-time-pad
+We use "llkjmlmpadkkc" as ciphertext and "thisisalilkey" as the encryption key and we press Decrypt.
+The Result is "secretmessage", so the flag is: picoCTF{SECRETMESSAGE}

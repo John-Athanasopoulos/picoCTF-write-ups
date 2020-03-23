@@ -1,0 +1,7 @@
+caesar cipher 1 - write up
+
+We download the cipher file and copy the text between the brackets ( {} ).
+We then head to a caesar cipher decryption site such as: https://cryptii.com/pipes/caesar-cipher
+There, if we enter grpqxdllaliazxbpxozfmebotlvlicmr and play with the shifting buttons, we will see
+that at +3 we get the following message: justagoodoldcaesarcipherwoyolfpu.
+So the flag is picoCTF{justagoodoldcaesarcipherwoyolfpu}

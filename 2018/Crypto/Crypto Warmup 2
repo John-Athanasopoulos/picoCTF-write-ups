@@ -1,0 +1,5 @@
+Crypto Warmup 2 - write up
+
+PicoCTF gives us cvpbPGS{guvf_vf_pelcgb!} and a hint mentoning ROT13. If we try to decode the given
+text with a ROT13 decryptor, we will find the flag:
+picoCTF{this_is_crypto!}

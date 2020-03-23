@@ -1,0 +1,7 @@
+caesar cipher 2 - write up
+
+We are given the following encrypted message: ^WQ]1B4iQ/SaO@M1W>V3`AMXcABMO@3\BMa3QC`3k
+At first I opened CyberChef and turn this to Hex but I quickly realised that I wouldn't be able to do anything with this. So I opened an ASCII Caesar Cipher decryption tool (https://sltls.org/shift),
+entered ^WQ]1B4iQ/SaO@M1W>V3`AMXcABMO@3\BMa3QC`3k in the input field and pressed shift right until
+I got the flag:
+picoCTF{cAesaR_CiPhErS_juST_aREnT_sEcUrE}
