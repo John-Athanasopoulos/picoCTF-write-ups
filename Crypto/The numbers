@@ -1,6 +1,0 @@
-The Numbers - write up
-
-We downoad and open the image given to us and we see a series of numbers. We quickly understand that each number
-stands for the corresponding letter of the alphabet, meaning 1 = 'A', 2 = 'B' etc.
-So, taking under considerationg the hint that says that the format of the flag is PICOCTF{...}, we find that the
-flag is: PICOCTF{THENUMBERSMASON}
