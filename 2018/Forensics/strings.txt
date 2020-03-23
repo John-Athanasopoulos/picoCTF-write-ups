@@ -1,0 +1,5 @@
+strings - write up
+
+We download the file "strings" and in the terminal run in the directory it is saved:
+>strings strings | grep "pico"
+It will give us the flag: picoCTF{sTrIngS_sAVeS_Time_2fbe2166}

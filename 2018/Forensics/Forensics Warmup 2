@@ -1,0 +1,7 @@
+Forensics Warmup 2 - write up
+
+If we download the image we will realise that indeed we can't open it. If we type in our terminal:
+> strings flag.png
+and scroll to the top, we will see that this picture is in JFIF format. So if we rename it to flag.jfif,
+and afterwards open it we will find the flag: picoCTF{extensions_are_a_lie}
+

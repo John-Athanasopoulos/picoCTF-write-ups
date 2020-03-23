@@ -1,0 +1,4 @@
+Forensics Warmup 1 - write up
+
+If we download the file given to us and unzip it, we will recieve a PNG picture giving us the flag:
+picoCTF{welcome_to_forensics}

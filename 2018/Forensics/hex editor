@@ -1,0 +1,5 @@
+hex editor - write up
+
+To solve this chalenge we can use hexeditor. But a much easier approach is with strings.
+If we type: >strings hex_editor.jpg , at the bottom of the page we are given the flag:
+picoCTF{and_thats_how_u_edit_hex_kittos_8BcA67a2}
