@@ -1,0 +1,10 @@
+what's a net cat? - write up
+
+We are told that we should connect to 2019shell1.picoctf.com at port 47229 in order to
+get the flag.
+In order to do that, we open the terminal and type: nc 2019shell1.picoctf.com 47229
+The message displayed in the terminal is:
+
+You're on your way to becoming the net cat master
+picoCTF{nEtCat_Mast3ry_cc4ad2c7}
+

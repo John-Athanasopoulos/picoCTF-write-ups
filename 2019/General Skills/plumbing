@@ -1,0 +1,11 @@
+plumbing - write up
+
+We begin and type "nc 2019shell1.picoctf.com 21957" into our terminal.
+We get a big series of strings, containing our flag.
+While we could search for 'picoCTF' with Ctrl+Shift+F, the best way to find
+the flag (and the reason this challenge exists) is to use a pipe! Thus, we can
+get the flag in only one line of terminal commands.
+
+To do this, we enter "nc 2019shell1.picoctf.com 21957 | grep 'picoCTF'".
+What this does is open the file and then search and find all the strings containing
+'picoCTF' and thus our flag: picoCTF{digital_plumb3r_c1082838}
