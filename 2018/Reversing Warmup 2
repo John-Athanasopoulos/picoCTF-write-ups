@@ -1,0 +1,6 @@
+Reversing Warmup 2 - write up
+
+We need to decode dGg0dF93NHNfczFtcEwz from Base64 encryption to ASCII text.
+As you can probably guess if you have seen other write ups from me, open CyberChef and enter
+dGg0dF93NHNfczFtcEwz in the input field. Recipe: From Base64. So we find the flag:
+picoCTF{th4t_w4s_s1mpL3}
