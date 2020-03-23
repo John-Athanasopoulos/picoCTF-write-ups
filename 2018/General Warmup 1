@@ -1,0 +1,4 @@
+General Warmup 1 - write up
+
+If we open CyberChef and type 0x41 in the input field and select "From Hex" as recipe (Delimiter: 0x),
+we will see that the flag is: picoCTF{A}
