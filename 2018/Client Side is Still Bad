@@ -1,0 +1,17 @@
+Client Side is Still Bad - write up
+
+If we open the website, open the Inspector tab and head to Debugger/(index), you will see that there are
+the following nested ifs:
+if (checkpass.substring(split*7, split*8) == '}') {
+      if (checkpass.substring(split*6, split*7) == 'd366') {
+        if (checkpass.substring(split*5, split*6) == 'd_3b') {
+         if (checkpass.substring(split*4, split*5) == 's_ba') {
+          if (checkpass.substring(split*3, split*4) == 'nt_i') {
+            if (checkpass.substring(split*2, split*3) == 'clie') {
+              if (checkpass.substring(split, split*2) == 'CTF{') {
+                if (checkpass.substring(0,split) == 'pico') {
+                  alert("You got the flag!")
+                  }
+
+If we enter picoCTF{client_is_bad_3bd366} as the password, we will get the alert "You got the flag!"
+So we understand that the flag is: picoCTF{client_is_bad_3bd366}
